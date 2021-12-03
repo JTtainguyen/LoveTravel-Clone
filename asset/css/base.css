@@ -1,0 +1,243 @@
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color:#fff;
+    --text-color:#555;
+    --black-color:#000;
+    --violet-color:#ba71da;
+    --red-color:#f76570;
+    --yellow-color: #ffd205;
+    --blue-color:#14b9d5;
+    --green-color:#1bbc9b;
+    --pink-color:#f76570;
+}
+/* ==================================== */
+/* grid box */
+.grid{
+    width: 100%;
+}
+
+.grid__row{
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__col-2{
+    width: 50%;
+    padding: 15px;
+}
+
+.grid__col-3{
+    width: 33.3333%;
+    padding: 15px;
+}
+
+.grid__col-3-2{
+    width: 66.6667%;
+    padding: 15px;
+}
+
+.grid__col-6{
+    width: 16.6667%;
+    padding: 15px;
+}
+
+
+
+/* ========================================================= */
+
+
+.content__attribute{
+    color: #9a9a9a;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 64px 0 28px;
+}
+
+.content__header{
+    margin: 0 0 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    color: var(--text-color);
+    font-weight: 700;
+    
+}
+
+.content__header span{
+    position: relative;
+    z-index: 1;
+}
+
+.content__header span::after{
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+}
+
+.content__header .greencolor::after{
+    background-color: var(--green-color);
+}
+
+.content__header .bluecolor::after{
+    background-color: var(--blue-color);
+}
+
+
+
+/* ========================================================= */
+
+
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.navbar__list-box{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f6f6f6;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 2px 5px #f1f1f1;
+    min-width: 190px;
+    /* max-height: 70vh;
+    overflow-y: auto; */
+}
+
+.navbar__list-item-link{
+    padding: 14.2px 25px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #9a9a9a;
+    letter-spacing: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+
+.navbar__list-item-link:hover{
+    background-color: #f9f9f9;
+}
+
+.label{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 4.5px;
+    border-radius: 2px;
+    text-align: center;
+}
+/* Side bar */
+.section__attribute{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #9a9a9a;
+    display: block;
+    line-height: 1.5;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.section__header{
+    margin: 12px 0 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    
+}
+
+.buy-btn{
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 18px 5px;
+    border-radius: 20px;
+    color: var(--white-color);
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+
+/* hover cart */
+.bachground-gradient{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(88, 88, 88, 0.6) 0%, rgba(199, 199, 199, 0.1) 40%, rgba(255,255,255,0) 100%);
+}
+
+.hover-cart{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--white-color);
+    background-color: #14b9d5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.view-destination__btn{
+    color: #14b9d5;
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 5px 24px;
+    line-height: 1.4;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+/* Scroll bar css */
+/* ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */
